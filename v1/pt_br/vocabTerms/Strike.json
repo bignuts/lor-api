@@ -1,0 +1,1 @@
+{"description":"Este efeito é ativado quando uma unidade tentar causar dano usando o Poder dela no fim da rodada ou com feitiços. Unidades com 0 de Poder não podem golpear.","name":"Golpear","nameRef":"Strike"}

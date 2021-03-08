@@ -3,6 +3,7 @@ package*.json
 *.js
 *.txt
 sets/
+cores/
 
 # Logs
 logs
