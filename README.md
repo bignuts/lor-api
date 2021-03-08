@@ -45,15 +45,17 @@ EXAMPLE
 
 ##### Examples:
 
-*Fetching all cards, Russian language, latest release -> https://cdn.jsdelivr.net/gh/bignuts/lor-api@master/ru_ru/cards.json
+Fetching all cards, Russian language, latest release -> https://cdn.jsdelivr.net/gh/bignuts/lor-api@master/v1/ru_ru/cards.json
 
 ```json
 {
-...
+  "01NX038": {...},
+  "01SI033": {...},
+  "01SI053": {...}
 }
 ```
 
-*Fetching Jubilant Poro, English language, 1.0.0 release -> https://cdn.jsdelivr.net/gh/bignuts/lor-api@1_0_0/en_us/cards/01FR008T1.json
+Fetching Jubilant Poro, English language, 1.0.0 release -> https://cdn.jsdelivr.net/gh/bignuts/lor-api@1_0_0/v1/en_us/cards/01FR008T1.json
 
 ```json
 {
@@ -92,7 +94,7 @@ EXAMPLE
 }
 ```
 
-*Fetching Jinx, Chinese language, 1.0.0 release -> https://cdn.jsdelivr.net/gh/bignuts/lor-api@1_0_0/en_us/cards/01PZ040.json
+Fetching Jinx, Chinese language, 1.0.0 release -> https://cdn.jsdelivr.net/gh/bignuts/lor-api@1_0_0/v1/zh_tw/cards/01PZ040.json
 
 ```json
 {
@@ -133,7 +135,7 @@ EXAMPLE
 
 ### git clone:
 
-Open terminal and run below command.
+Open terminal and run command below.
 
 ```sh
 git clone https://github.com/bignuts/lor-api.git
