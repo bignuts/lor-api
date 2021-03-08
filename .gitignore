@@ -1,3 +1,9 @@
+package*.json
+*.sh
+*.js
+*.txt
+sets/
+
 # Logs
 logs
 *.log
