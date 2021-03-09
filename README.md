@@ -1,10 +1,10 @@
-# lor-api - Legends of Runeterra assets repository
+# lor-api - Legends of Runeterra dataset repository
 
-The repository contains all the available assets published from https://developer.riotgames.com/docs/lor since 1.0.0 version of the game.
+The repository contains all the available dataset published from https://developer.riotgames.com/docs/lor since 1.0.0 version of the game.
 
 ## How to use:
 
-There are two ways to use the assets, preferred one is to fetch data API style with [jsDelivr](https://www.jsdelivr.com/), or just clone the repository.
+There are two ways to use the dataset, preferred one is to fetch data API style with [jsDelivr](https://www.jsdelivr.com/), or just clone the repository.
 
 ### jsDelivr:
 
@@ -18,6 +18,16 @@ EXAMPLE
 | ------------- |:-------------:|
 | cards.json | All cards |
 | cards/[cardCode].json | Single card |
+| keywords.json | All keywords |
+| keywords/[nameRef].json | Single keyword |
+| rarities.json | All rarities |
+| rarities/[nameRef].json | Single rarity |
+| regions.json | All regions |
+| regions/[nameRef].json | Single region |
+| spellSpeeds.json | All spellSpeeds |
+| spellSpeeds/[nameRef].json | Single spellSpeed |
+| vocabTerms.json | All vocabTerms |
+| vocabTerms/[nameRef].json | Single vocabTerm |
 
 **[@branch]**
 | Branch | Game Version |
@@ -51,7 +61,8 @@ Fetching all cards, Russian language, latest release -> https://cdn.jsdelivr.net
 {
   "01NX038": {...},
   "01SI033": {...},
-  "01SI053": {...}
+  "01SI053": {...},
+  ...
 }
 ```
 
@@ -94,42 +105,52 @@ Fetching Jubilant Poro, English language, 1.0.0 release -> https://cdn.jsdelivr.
 }
 ```
 
-Fetching Jinx, Chinese language, 1.0.0 release -> https://cdn.jsdelivr.net/gh/bignuts/lor-api@1_0_0/v1/zh_tw/cards/01PZ040.json
+Fetching Regions, Chinese language, 1.0.0 release -> https://cdn.jsdelivr.net/gh/bignuts/lor-api@1_0_0/v1/zh_tw/regions.json
 
 ```json
 {
-  "associatedCards": [],
-  "associatedCardRefs": ["01PZ040T2", "01PZ040T1", "01PZ040T3"],
-  "assets": [
-    {
-      "gameAbsolutePath": "http://dd.b.pvp.net/1_0_0/set1/zh_tw/img/cards/01PZ040.png",
-      "fullAbsolutePath": "http://dd.b.pvp.net/1_0_0/set1/zh_tw/img/cards/01PZ040-full.png"
-    }
-  ],
-  "region": "皮爾托福 & 佐恩",
-  "regionRef": "PiltoverZaun",
-  "attack": 4,
-  "cost": 4,
-  "health": 3,
-  "description": "",
-  "descriptionRaw": "",
-  "levelupDescription": "此牌在場上時我方用盡手牌。",
-  "levelupDescriptionRaw": "此牌在場上時我方用盡手牌。",
-  "flavorText": "「怎麼啦，惡鯊？」\n「我好擔心你喔，吉茵珂絲！每次你無聊就會想要...」\n「想要來個大轟炸！惡鯊，這真是好主意！」",
-  "artistName": "SIXMOREVODKA",
-  "name": "吉茵珂絲",
-  "cardCode": "01PZ040",
-  "keywords": ["快速攻擊"],
-  "keywordRefs": ["QuickStrike"],
-  "spellSpeed": "",
-  "spellSpeedRef": "",
-  "rarity": "英雄",
-  "rarityRef": "Champion",
-  "subtype": "",
-  "subtypes": [],
-  "supertype": "英雄",
-  "type": "單位",
-  "collectible": true
+  "Noxus": {
+    "abbreviation": "NX",
+    "iconAbsolutePath": "http://dd.b.pvp.net/1_0_0/core/zh_tw/img/regions/icon-noxus.png",
+    "name": "諾克薩斯",
+    "nameRef": "Noxus"
+  },
+  "Demacia": {
+    "abbreviation": "DE",
+    "iconAbsolutePath": "http://dd.b.pvp.net/1_0_0/core/zh_tw/img/regions/icon-demacia.png",
+    "name": "蒂瑪西亞",
+    "nameRef": "Demacia"
+  },
+  "Freljord": {
+    "abbreviation": "FR",
+    "iconAbsolutePath": "http://dd.b.pvp.net/1_0_0/core/zh_tw/img/regions/icon-freljord.png",
+    "name": "弗雷爾卓德",
+    "nameRef": "Freljord"
+  },
+  "ShadowIsles": {
+    "abbreviation": "SI",
+    "iconAbsolutePath": "http://dd.b.pvp.net/1_0_0/core/zh_tw/img/regions/icon-shadowisles.png",
+    "name": "闇影島",
+    "nameRef": "ShadowIsles"
+  },
+  "Ionia": {
+    "abbreviation": "IO",
+    "iconAbsolutePath": "http://dd.b.pvp.net/1_0_0/core/zh_tw/img/regions/icon-ionia.png",
+    "name": "愛歐尼亞",
+    "nameRef": "Ionia"
+  },
+  "Bilgewater": {
+    "abbreviation": "BW",
+    "iconAbsolutePath": "http://dd.b.pvp.net/1_0_0/core/zh_tw/img/regions/icon-bilgewater.png",
+    "name": "比爾吉沃特",
+    "nameRef": "Bilgewater"
+  },
+  "PiltoverZaun": {
+    "abbreviation": "PZ",
+    "iconAbsolutePath": "http://dd.b.pvp.net/1_0_0/core/zh_tw/img/regions/icon-piltoverzaun.png",
+    "name": "皮爾托福 & 佐恩",
+    "nameRef": "PiltoverZaun"
+  }
 }
 ```
 
